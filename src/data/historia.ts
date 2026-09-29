@@ -1,0 +1,61 @@
+import type { Article } from "./types";
+import { IMG } from "./images";
+
+// Artículo 1 — Historia de WiMAX.
+// Cada dato fue contrastado con fuentes públicas (IEEE, NIST, WiMAX Forum, prensa técnica).
+export const historia: Article = {
+  slug: "historia",
+  title: "Historia de WiMAX: del estándar IEEE 802.16 a la era del 4G",
+  kicker: "Historia",
+  summary:
+    "De un grupo de trabajo del IEEE en 1998 a redes de cientos de miles de usuarios en cinco continentes: así nació, creció y se retiró WiMAX.",
+  hero: IMG.towerSilhouette,
+  date: "2026-01-12",
+  readMin: 9,
+  sources: [
+    { label: "R. B. Marks (NIST), «IEEE 802.16 marks broadband wireless access maturation», 2002", url: "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=33100" },
+    { label: "Roger B. Marks — CV (IEEE 802.16 / WiMAX Forum)", url: "https://consensii.com/marks/Marks-CV.pdf" },
+    { label: "WiMAX Forum — 519 despliegues en 146 países (2009)", url: "https://www.rfglobalnet.com/doc/wimax-deployments-go-global-with-519-in-146-0001" },
+    { label: "UIT-D: Banda ancha en los países andinos (2014)", url: "https://www.itu.int/dms_pub/itu-d/opb/pref/D-PREF-EF.BB.ANDEAN-2014-PDF-S.pdf" },
+    { label: "Wikipedia: WiMAX y Clearwire (fechas de cierre de la red)", url: "https://en.wikipedia.org/wiki/Clearwire" },
+    { label: "Technical.ly: aviso de cierre de CLEAR 4G WiMAX (2015)", url: "https://technical.ly/diversity-equity-inclusion/clear-4g-network-shutdown/" },
+    { label: "Silicon UK: «Tales in Tech History: WiMax»", url: "https://www.silicon.co.uk/networks/tales-tech-history-wimax-227889" },
+  ],
+  blocks: [
+    { k: "p", t: "WiMAX (Worldwide Interoperability for Microwave Access) fue, durante casi una década, la gran promesa de la banda ancha inalámbrica. Nació para resolver un problema muy concreto: llevar Internet a lugares donde tender cobre o fibra era demasiado caro. Su historia es también una lección sobre cómo la tecnología no siempre gana por ser la primera, sino por encajar mejor en el ecosistema industrial que la rodea." },
+    { k: "h2", t: "Los orígenes: la «última milla» y el grupo IEEE 802.16" },
+    { k: "p", t: "A finales de los años noventa, el mundo vivía el auge de Internet y de las telecomunicaciones, pero la llamada «última milla» —el tramo final entre la central del operador y el hogar del usuario— seguía siendo el eslabón más caro y lento. DSL y cable no llegaban a barrios periféricos ni a zonas rurales, y desplegar fibra suponía obras enormes. La radio parecía la respuesta natural." },
+    { k: "p", t: "En 1998 el ingeniero Roger B. Marks, del Instituto Nacional de Estándares y Tecnología de EE. UU. (NIST) en Boulder, Colorado, impulsó la creación de un grupo de trabajo dentro del IEEE para estandarizar el acceso inalámbrico de banda ancha. Marks presidió ese grupo —el IEEE 802.16 Working Group on Broadband Wireless Access— y fue reelegido en numerosas ocasiones; su currículum lo describe como quien inició el grupo y lideró el desarrollo del estándar. El resultado fue una familia de normas conocida como «WirelessMAN», pensada para redes de área metropolitana." },
+    { k: "quote", t: "El grupo de trabajo IEEE 802.16 se ha convertido en el punto focal de la industria mundial de acceso inalámbrico de banda ancha.", by: "Roger B. Marks, NIST, 2002 (traducción libre)" },
+    { k: "img", img: IMG.towerDish, caption: "Las torres con enlaces de microondas fueron la base física de las primeras redes 802.16." },
+    { k: "h2", t: "2001–2005: del primer estándar a WiMAX móvil" },
+    { k: "h3", t: "IEEE 802.16-2001: línea de vista y frecuencias altas" },
+    { k: "p", t: "La primera versión del estándar se aprobó a finales de 2001 y se publicó el 8 de abril de 2002. Definía un interfaz aéreo para acceso inalámbrico fijo en las bandas de 10 a 66 GHz, con modulación de portadora única y necesidad de línea de vista directa entre antenas. Era una tecnología pensada para conectar edificios y estaciones base, no aún al usuario doméstico." },
+    { k: "h3", t: "El nacimiento del WiMAX Forum (junio de 2001)" },
+    { k: "p", t: "Como ocurrió con Wi-Fi y la Wi-Fi Alliance, la industria creó un organismo para certificar la interoperabilidad. En junio de 2001 se formó el WiMAX Forum, y de allí surgió el propio nombre «WiMAX». Su misión: definir perfiles de sistema, probar equipos de distintos fabricantes y promover el estándar. Ron Resnick, ejecutivo de Intel, presidió el Foro desde 2004. Intel, además, fue uno de los grandes impulsores comerciales de la tecnología, con su propio negocio de módems de banda ancha inalámbrica creado en 2002." },
+    { k: "h3", t: "802.16a y 802.16-2004: WiMAX fijo sin línea de vista" },
+    { k: "p", t: "Entre 2003 y 2004 llegaron las enmiendas que hicieron viable el negocio: bandas de 2 a 11 GHz (incluidas las licenciadas de 2,5 y 3,5 GHz), operación sin línea de vista (NLOS) y modulación OFDM. Esta versión —conocida como «WiMAX fijo» o 802.16d— prometía alcances de varios kilómetros y velocidades teóricas de hasta 75 Mbps en canales de 20 MHz." },
+    { k: "h3", t: "802.16e-2005: WiMAX móvil" },
+    { k: "p", t: "A finales de 2005 se completó IEEE 802.16e, que añadió movilidad con traspaso (handoff) entre estaciones base y una capa física OFDMA escalable. Las primeras certificaciones de equipos del WiMAX Forum llegaron en esa misma época. Con 802.16e, WiMAX dejó de ser solo una alternativa al ADSL y pasó a competir en el terreno de los móviles." },
+    { k: "table", caption: "Evolución del estándar IEEE 802.16", head: ["Versión", "Hito", "Banda", "Rasgo clave"], rows: [
+      ["802.16-2001", "Aprobado 2001, publicado abril de 2002", "10–66 GHz", "Línea de vista, portadora única"],
+      ["802.16a (2003)", "Enmienda para frecuencias menores", "2–11 GHz", "NLOS, OFDM"],
+      ["802.16-2004 (d)", "«WiMAX fijo»", "2,5 / 3,5 / 5,8 GHz", "Acceso fijo, perfiles certificables"],
+      ["802.16e-2005", "«WiMAX móvil»", "2,3 / 2,5 / 3,5 GHz", "Movilidad, OFDMA escalable"],
+      ["802.16m (2011)", "«WiMAX 2», candidato IMT-Advanced", "Varias", "Hasta 1 Gbit/s en estaciones fijas"],
+    ] },
+    { k: "h2", t: "2006–2010: el auge mundial" },
+    { k: "p", t: "En 2006 Corea del Sur puso en marcha WiBro, una variante de WiMAX móvil de la que el propio estándar adoptó tecnología. Ese mismo año Sprint anunció que basaría su red móvil nacional en WiMAX, presentándola como la primera red «4G». En octubre de 2007 la Unión Internacional de Telecomunicaciones (UIT) incorporó WiMAX a la familia de tecnologías 3G (IMT-2000), tras un debate con reticencias de China y el apoyo de EE. UU. y otros países." },
+    { k: "p", t: "Los números de esos años muestran el impulso: para diciembre de 2009 el WiMAX Forum registraba 519 despliegues en 146 países, 112 de ellos añadidos solo ese año. Yota, en Rusia, alcanzaba 250.000 usuarios activos; KT cubría más de la mitad de la población coreana y UQ Communications más de la mitad de la japonesa." },
+    { k: "img", img: IMG.kualaLumpur, caption: "Malasia (Packet One) fue uno de los mercados asiáticos donde WiMAX ofreció servicio comercial." },
+    { k: "fact", t: "El HTC EVO 4G, lanzado por Sprint en junio de 2010, fue el primer smartphone WiMAX de Estados Unidos. Ninguna generación de iPhone incorporó WiMAX: Apple esperó a LTE." },
+    { k: "h2", t: "La guerra con LTE" },
+    { k: "p", t: "El problema de WiMAX no fue técnico, sino industrial. LTE (Long Term Evolution) llegó más tarde, pero se presentó como una simple actualización de las redes GSM/UMTS ya desplegadas, mientras que WiMAX era una tecnología completamente nueva. Los grandes operadores móviles, que ya habían invertido miles de millones en 3G, prefirieron esperar. Como resumió el directivo de UK Broadband Nicholas James, «el problema de WiMAX fue el tiempo que tardó en ser móvil»." },
+    { k: "p", t: "Verizon lanzó la primera red LTE nacional de EE. UU. en 2010 con velocidades muy superiores a las de WiMAX. En 2011 Sprint anunció que abandonaría WiMAX, y en el CES de enero de 2012 confirmó que dejaba de ofrecer dispositivos WiMAX. Proyecciones de la época, como la de Maravedis (unos 25 millones de abonados WiMAX a finales de 2011), pronto quedaron dominadas por las de LTE." },
+    { k: "h2", t: "Declive y estado actual" },
+    { k: "p", t: "Clearwire, el gran operador estadounidense con la marca CLEAR, llegó a servir 88 mercados y unos 11 millones de suscriptores (incluyendo mayoristas) en enero de 2012. Sprint terminó adquiriéndola y fue eliminando WiMAX: el 6 de noviembre de 2015 cesó el servicio CLEAR 4G, aunque la red siguió activa sin clientes comerciales hasta principios de marzo de 2016 por una orden judicial. En Rusia, Yota migró sus abonados a LTE desde 2011–2012." },
+    { k: "p", t: "Hoy WiMAX sobrevive en nichos: pequeños operadores, redes industriales y ISPs rurales que mantienen equipos antiguos. Su herencia, sin embargo, es enorme: OFDMA, MIMO, QoS por flujo y modelos de red totalmente IP fueron ideas que LTE y 5G consolidaron. Incluso su espectro tiene una segunda vida: la banda de 3,5 GHz, que muchos países licitaron para WiMAX, es hoy la banda estrella del 5G. En 2025 Bolivia comenzó precisamente a asignar 3,5 GHz a Entel para su despliegue 5G." },
+    { k: "fact", t: "El 6 de noviembre de 2015 Sprint apagó oficialmente CLEAR 4G, pero por orden judicial la red WiMAX siguió encendida —sin clientes— hasta marzo de 2016." },
+    { k: "gallery", imgs: [IMG.towers, IMG.redTower, IMG.rooftop] },
+  ],
+};
