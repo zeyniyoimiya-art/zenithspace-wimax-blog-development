@@ -21,8 +21,7 @@ export const bolivia: Article = {
   summary:
     "Cronología, espectro de 3,5 GHz, cobertura por departamento y el camino hacia LTE y 5G de una tecnología que prometía vencer la geografía boliviana.",
   hero: IMG.laPaz,
-  date: "2026-02-02",
-  readMin: 10,
+  date: "2026-09-29",
   sources: [
     { label: "OSIPTEL: «Entel lanza WiMAX a tarifas promocionales» (2 oct. 2008)", url: "https://www.gob.pe/institucion/osiptel/noticias/177600-entel-lanza-wimax-a-tarifas-promocionales" },
     { label: "Entel Bolivia: Internet WiMAX (No vigente comercialmente)", url: "https://institucional.entel.bo/inicio3.0/index.php/internet/nuestros-servicios/internet-4g/27-personas-internet/personas-internet-otros" },

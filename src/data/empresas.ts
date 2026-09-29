@@ -84,8 +84,7 @@ export const empresasArt: Article = {
   summary:
     "Entel, COTAS, AXS y otras: qué hizo cada operador, con qué velocidades, dónde y qué quedó. Con nivel de evidencia para cada dato.",
   hero: IMG.towerDish,
-  date: "2026-02-09",
-  readMin: 8,
+  date: "2026-09-29",
   sources: [
     { label: "Entel Bolivia: Internet WiMAX (No vigente comercialmente)", url: "https://institucional.entel.bo/inicio3.0/index.php/internet/nuestros-servicios/internet-4g/27-personas-internet/personas-internet-otros" },
     { label: "Developing Telecoms: COTAS y Airspan (2009)", url: "https://developingtelecoms.com/telecom-technology/wireless-networks/2306-airspan-selected-by-cotas-for-multi-city-wimax-network-in-bolivia.html" },

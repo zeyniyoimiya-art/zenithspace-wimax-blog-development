@@ -31,7 +31,6 @@ export interface Article {
   summary: string;
   hero: Img;
   date: string; // ISO
-  readMin: number;
   blocks: Block[];
   sources: Source[];
 }

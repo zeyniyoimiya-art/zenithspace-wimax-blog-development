@@ -85,8 +85,7 @@ export const personajes: Article = {
   summary:
     "Ingenieros del IEEE, directivos del WiMAX Forum y ejecutivos de Sprint y Clearwire: las personas detrás del estándar 802.16.",
   hero: IMG.switchGear,
-  date: "2026-01-19",
-  readMin: 7,
+  date: "2026-09-29",
   sources: [
     { label: "Roger B. Marks — CV oficial", url: "https://consensii.com/marks/Marks-CV.pdf" },
     { label: "Ron Resnick — perfil (presidente del WiMAX Forum desde 2004)", url: "https://vanceafbuptclass73-01.weebly.com/ron-resnick.html" },

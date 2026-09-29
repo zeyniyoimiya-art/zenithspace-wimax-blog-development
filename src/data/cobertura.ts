@@ -37,8 +37,7 @@ export const cobertura: Article = {
   summary:
     "519 despliegues en 146 países hacia 2009: de Baltimore a Moscú, de Seúl a La Paz. Explora el globo interactivo y compara los grandes mercados.",
   hero: IMG.nightCity,
-  date: "2026-01-26",
-  readMin: 8,
+  date: "2026-09-29",
   sources: [
     { label: "WiMAX Forum vía RF Globalnet: 519 despliegues en 146 países (2009)", url: "https://www.rfglobalnet.com/doc/wimax-deployments-go-global-with-519-in-146-0001" },
     { label: "Wikipedia: Clearwire (88 mercados, ≈11 M de suscriptores)", url: "https://en.wikipedia.org/wiki/Clearwire" },

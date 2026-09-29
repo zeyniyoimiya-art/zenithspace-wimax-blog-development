@@ -182,7 +182,7 @@ export function ArticleView({ article, beforeBody }: { article: Article; beforeB
           <h1 className="font-display text-3xl font-bold leading-tight sm:text-5xl">{article.title}</h1>
           <p className="mt-4 max-w-2xl text-lg text-muted">{article.summary}</p>
           <p className="mt-5 text-sm text-muted">
-            <strong className="text-fg">Por: {AUTHOR}</strong> · {formatDate(article.date)} · {article.readMin} min de lectura
+            <strong className="text-fg">Por: {AUTHOR}</strong> · {formatDate(article.date)}
           </p>
           <p className="mt-1 text-xs text-muted">Foto de portada: {article.hero.credit} / Pexels</p>
         </div>

@@ -10,8 +10,7 @@ export const historia: Article = {
   summary:
     "De un grupo de trabajo del IEEE en 1998 a redes de cientos de miles de usuarios en cinco continentes: así nació, creció y se retiró WiMAX.",
   hero: IMG.towerSilhouette,
-  date: "2026-01-12",
-  readMin: 9,
+  date: "2026-09-29",
   sources: [
     { label: "R. B. Marks (NIST), «IEEE 802.16 marks broadband wireless access maturation», 2002", url: "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=33100" },
     { label: "Roger B. Marks — CV (IEEE 802.16 / WiMAX Forum)", url: "https://consensii.com/marks/Marks-CV.pdf" },

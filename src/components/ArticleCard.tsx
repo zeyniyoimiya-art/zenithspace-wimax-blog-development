@@ -22,9 +22,7 @@ export function ArticleCard({ a }: { a: Article }) {
         <div className="flex flex-1 flex-col gap-3 p-5 @md:p-7">
           <div className="flex items-center gap-3 text-xs">
             <span className="rounded-full bg-gradient-to-r from-nebula to-cosmic px-3 py-1 font-semibold text-white">{a.kicker}</span>
-            <span className="text-muted">
-              {formatDate(a.date)} · {a.readMin} min
-            </span>
+            <span className="text-muted">{formatDate(a.date)}</span>
           </div>
           <h3 className="font-display text-xl font-semibold leading-snug @md:text-2xl">{a.title}</h3>
           <p className="text-sm leading-relaxed text-muted">{a.summary}</p>
